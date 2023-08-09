@@ -1,0 +1,14 @@
+﻿<Project Sdk="MSBuild.Sdk.SqlProj/2.6.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Scripts/Script.FillForPlanFunctionality.sql" />
+    <Content Remove="Scripts/Script.PostDeployment.sql" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <PostDeploy Include="Scripts/Script.PostDeployment.sql" />
+  </ItemGroup>
+</Project>

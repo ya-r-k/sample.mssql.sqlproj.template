@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Scripts/Script.FillForPlanFunctionality.sql" />
-    <Content Remove="Scripts/Script.PostDeployment.sql" />
+    <Content Remove="InstallTests.sql" />
+    <Content Remove="tSQLt\PrepareServer.sql" />
+    <Content Remove="tSQLt\tSQLt.class.sql" />
   </ItemGroup>
-	
+
   <ItemGroup>
-    <PostDeploy Include="Scripts/Script.PostDeployment.sql" />
+    <None Remove="Tests\Tables\PlanTests.sql" />
   </ItemGroup>
 	
 </Project>

@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Scripts/Script.FillForPlanFunctionality.sql" />
     <Content Remove="Scripts/Script.PostDeployment.sql" />
+    <Content Remove="Scripts\Script.FillForQuizFunctionality.sql" />
   </ItemGroup>
-	
+
   <ItemGroup>
     <PostDeploy Include="Scripts/Script.PostDeployment.sql" />
   </ItemGroup>
-	
+
 </Project>

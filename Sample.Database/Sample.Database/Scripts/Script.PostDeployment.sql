@@ -11,4 +11,4 @@ Example:      :setvar TableName MyTable
 --------------------------------------------------------------------------------------
 */
 
-:r Script.FillForPlanFunctionality.sql
+:r Script.FillForQuizFunctionality.sql

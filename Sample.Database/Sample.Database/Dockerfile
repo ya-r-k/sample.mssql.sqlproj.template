@@ -32,7 +32,7 @@ RUN wget -progress=bar:force -q -O sqlpackage.zip https://aka.ms/sqlpackage-linu
     && chown -R mssql /opt/sqlpackage \
     && mkdir /tmp/db \
     && chown -R mssql /tmp/db \
-	&& rm sqlpackage.zip
+    && rm sqlpackage.zip
 
 # Copy the built dacpac file from the build stage
 COPY --from=build /app/build/Sample.Database.dacpac /tmp/db/Sample.Database.dacpac

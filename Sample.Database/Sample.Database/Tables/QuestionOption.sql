@@ -4,5 +4,5 @@
     [OptionLetter] NCHAR(1)      NULL,
     [Text]         NVARCHAR(256) NOT NULL,
     [IsCorrect]    BIT           NOT NULL,
-    CONSTRAINT [PK_QuestionOption] PRIMARY KEY CLUSTERED ([Id] ASC, [OptionNumber] ASC),
+    CONSTRAINT [PK_QuestionOption] PRIMARY KEY CLUSTERED ([QuestionId] ASC, [OptionNumber] ASC),
 );

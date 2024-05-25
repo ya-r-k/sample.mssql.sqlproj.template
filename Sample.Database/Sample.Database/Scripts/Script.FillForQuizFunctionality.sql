@@ -24,7 +24,7 @@ VALUES
     ('Software Testing Techniques', 'Covering unit testing, integration testing, and more.', '2024-05-24T22:31:19'),
     ('Microservices Challenges', 'Questions related to microservices architecture and deployment.', '2024-05-24T22:31:19'),
     ('Ollama and Local LLMs', 'Explore topics related to Ollama and local language models.', '2024-05-24T22:31:19');
-GO;
+GO
 
 -- Insert data into the `Question` table
 INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
@@ -85,12 +85,8 @@ VALUES
     (3, 'When was WebRTC fully standardized?', 0, 2),
     (3, 'What is the primary use case for WebRTC today?', 0, 2),
     (3, 'Can WebRTC be modified to suit specific purposes?', 0, 2),
-    (3, 'What are some open-source WebRTC projects and frameworks?', 0, 2);
+    (3, 'What are some open-source WebRTC projects and frameworks?', 0, 2),
     -- 
-GO;
-
-INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
-VALUES
     (4, 'What is the primary purpose of the .NET Framework?', 0, 2),
     (4, 'Which runtime was released in 2016 and can be used to create ASP.NET Core and Universal Windows Platform (UWP) applications?', 0, 2),
     (4, 'What is the main difference between .NET Core and the .NET Framework?', 0, 2),
@@ -110,11 +106,8 @@ VALUES
     (4, 'What processes are involved in maintaining a healthy ecosystem?', 0, 2),
     (4, 'What is the goal of .NET 5, the latest runtime in the .NET Ecosystem?', 0, 2),
     (4, 'How does .NET Core contribute to modern application development?', 0, 2),
-    (4, 'Which runtime should you choose when building a reusable library for cross-platform applications?', 0, 2);
-GO;
-
-INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
-VALUES
+    (4, 'Which runtime should you choose when building a reusable library for cross-platform applications?', 0, 2),
+    -- 
     (9, 'What does REST stand for, and who first presented it?', 0, 2),
     (9, 'What is the main difference between REST and SOAP?', 0, 2),
     (9, 'Explain the concept of a "uniform interface" in REST.', 0, 2),
@@ -134,12 +127,8 @@ VALUES
     (9, 'How can you create a RESTful API that adheres to the principles of REST?', 0, 2),
     (9, 'What are the advantages of using RESTful APIs in microservices architectures?', 0, 2),
     (9, 'How can you handle authentication and authorization in a RESTful API?', 0, 2),
-    (9, 'Provide an example of a well-designed RESTful API endpoint.', 0, 2);
-GO;
-
--- INSERT INTO script for Cloud Computing Essentials questions
-INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
-VALUES
+    (9, 'Provide an example of a well-designed RESTful API endpoint.', 0, 2),
+    -- INSERT INTO script for Cloud Computing Essentials questions
     (10, 'What is the difference between public, private, and hybrid clouds?', 0, 2),
     (10, 'Explain the concept of elasticity in cloud computing.', 0, 2),
     (10, 'What are the essential characteristics of cloud computing according to NIST?', 0, 2),
@@ -159,11 +148,8 @@ VALUES
     (10, 'Discuss the CAP theorem and its relevance to distributed systems in the cloud.', 0, 2),
     (10, 'What are the cost considerations when migrating to the cloud?', 0, 2),
     (10, 'Compare Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) in terms of services and features.', 0, 2),
-    (10, 'Provide an overview of serverless databases and their benefits.', 0, 2);
-GO;
-
-INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
-VALUES
+    (10, 'Provide an overview of serverless databases and their benefits.', 0, 2),
+    -- 
     (12, 'Have you implemented proper authorization controls?', 0, 2),
     (12, 'How do you ensure that only authorized users can access specific functionality or resources?', 0, 2),
     (12, 'Have you implemented proper authentication controls?', 0, 2),
@@ -200,11 +186,8 @@ VALUES
     (12, 'Do you prioritize security requirements based on risk?', 0, 2),
     (12, 'What types of security testing do you perform (e.g., penetration testing, static analysis, dynamic analysis)?', 0, 2),
     (12, 'How do you address identified vulnerabilities?', 0, 2),
-    (12, 'Have you provided adequate software security training to your development staff?', 0, 2);
-GO;
-
-INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
-VALUES
+    (12, 'Have you provided adequate software security training to your development staff?', 0, 2),
+    -- 
     (15, 'What is the primary goal of Agile methodology?', 0, 2),
     (15, 'Which Agile framework emphasizes continuous improvement through regular retrospectives?', 0, 2),
     (15, 'In Scrum, what is the purpose of the Daily Standup (Daily Scrum) meeting?', 0, 2),
@@ -224,11 +207,8 @@ VALUES
     (15, 'Explain the concept of "timeboxing" in Agile.', 0, 2),
     (15, 'What is the "Definition of Done" in Scrum?', 0, 2),
     (15, 'How can Agile principles be applied beyond software development?', 0, 2),
-    (15, 'Why is customer collaboration crucial in Agile projects?', 0, 2);
-GO;
-
-INSERT INTO [dbo].[Question] ([QuizId], [Text], [Type], [Complexity])
-VALUES
+    (15, 'Why is customer collaboration crucial in Agile projects?', 0, 2),
+    -- 
     (20, 'What is the primary goal of a microservices architecture?', 0, 2),
     (20, 'How does a microservices approach differ from a monolithic architecture?', 0, 2),
     (20, 'What are the benefits of using microservices for application development?', 0, 2),
@@ -249,5 +229,4 @@ VALUES
     (20, 'How can problems in one microservice impact other interconnected services?', 0, 2),
     (20, 'What role does a DevOps culture play in successful microservices adoption?', 0, 2),
     (20, 'When should organizations avoid using microservices?', 0, 2);
-GO;
-
+GO

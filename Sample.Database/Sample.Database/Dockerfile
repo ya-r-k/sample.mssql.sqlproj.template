@@ -22,8 +22,8 @@ USER root
 
 # Install required packages
 RUN apt-get update && apt-get install -y \
-	unzip \
-	&& rm -rf /var/lib/apt/lists/*
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
 
 # Download and set up SQLPackage for Linux
 RUN wget -progress=bar:force -q -O sqlpackage.zip https://aka.ms/sqlpackage-linux \
@@ -44,7 +44,7 @@ ENV DB_NAME=QuestionnaireDb
 
 # Start SQL Server and publish the database
 RUN (/opt/mssql/bin/sqlservr --accept-eula & ) | grep -q "Service Broker manager has started" \
-	&& /opt/sqlpackage/sqlpackage /a:Publish /tsn:localhost /tdn:$DB_NAME /tu:sa /tp:$SA_PASSWORD /sf:/tmp/db/Sample.Database.dacpac /stsc:true /ttsc:true \
-	&& rm -r /tmp/db/Sample.Database.dacpac \
-	&& pkill sqlservr \
-	&& rm -r /opt/sqlpackage
+    && /opt/sqlpackage/sqlpackage /a:Publish /tsn:localhost /tdn:$DB_NAME /tu:sa /tp:$SA_PASSWORD /sf:/tmp/db/Sample.Database.dacpac /stsc:true /ttsc:true \
+    && rm -r /tmp/db/Sample.Database.dacpac \
+    && pkill sqlservr \
+    && rm -r /opt/sqlpackage

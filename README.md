@@ -1,4 +1,4 @@
-# my-sqlproj-database-template
+# sample.mssql.sqlproj.template
 
 ## Links
 
